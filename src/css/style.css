@@ -1,0 +1,9 @@
+#dropdownMenuButton:focus{
+    box-shadow: none;
+}
+
+#dropdownMenuItem .dropdown-item:hover, .activeLang {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #e9ecef;
+}

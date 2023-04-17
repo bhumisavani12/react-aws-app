@@ -1,0 +1,13 @@
+#dropdownMenuButton{
+    color: #007bff;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+#supportButton{
+    background: #1589ec;
+    border-color: #1589ec;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
