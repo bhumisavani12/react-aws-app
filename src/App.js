@@ -1,30 +1,28 @@
-import logo from "./logo.svg";
+import React from 'react';
 import "@aws-amplify/ui-react/styles.css";
 import {
-  withAuthenticator,
-  Button,
-  Heading,
-  Image,
-  View,
-  Card,
-} from "@aws-amplify/ui-react";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import '../src/css/style.css'
+import LoginPage from "./components/LoginPage";
+import HomePage from './components/HomePage';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <LoginPage />,
+  },
+  {
+    path: "/dashboard",
+    element: <HomePage />,
+  },
+]);
 
 function App({ signOut }) {
+
   return (
-    // <View className="App">
-    //   <Card>
-    //     <Image src={logo} className="App-logo" alt="logo" />
-    //     <Heading level={1}>We now have Auth!</Heading>
-    //   </Card>
-    //   <Button onClick={signOut}>Sign Out</Button>
-    // </View>
-    <div className="App">
-      <Header/>
-      <Footer/>
-    </div>
+    <RouterProvider router={router} />
   );
 }
 

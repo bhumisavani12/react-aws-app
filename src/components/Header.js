@@ -23,8 +23,8 @@ class Header extends Component {
         const { lang } = this.state
         const {t} = this.props;
         return (
-            <div>
-                <h1>{t('title')}</h1>
+            <div className='main_header'>
+                {/* <h1>{t('title')}</h1> */}
                 <nav className="navbar navbar-expand-lg navbar-light bg-light">
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>

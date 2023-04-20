@@ -1,9 +1,21 @@
-#dropdownMenuButton:focus{
+#dropdownMenuButton:focus {
     box-shadow: none;
 }
 
-#dropdownMenuItem .dropdown-item:hover, .activeLang {
+#dropdownMenuItem .dropdown-item:hover,
+.activeLang {
     color: #16181b;
     text-decoration: none;
     background-color: #e9ecef;
+}
+
+.main_footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.2rem;
+    height:50px;
 }
